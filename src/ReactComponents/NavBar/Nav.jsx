@@ -1,4 +1,6 @@
 import React from "react";
+import Drawer from "../Adrower/Drawer";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -6,7 +8,7 @@ export default function Nav() {
       <ul className=" flex  justify-between items-center px-3 bg-transparent backdrop-blur-lg h-16 fixed z-20 top-0 w-screen">
         <li className=" flex gap-1 items-center">
           <h3 className=" scroll-m-20  text-3xl font-semibold tracking-tight first:mt-0">
-            HLT
+            <Link to="/signin">HLT</Link>
           </h3>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,20 +26,22 @@ export default function Nav() {
           </svg>
         </li>
         <li>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-9 h-9"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+          <Drawer>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-9 h-9 text-black"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </Drawer>
         </li>
       </ul>
     </nav>

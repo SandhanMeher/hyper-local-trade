@@ -4,8 +4,11 @@ import Mainn from "./ReactComponents/Cards/Mainn";
 
 import Nav from "./ReactComponents/NavBar/Nav";
 import AutocompleteIntroduction from "./ReactComponents/NavBar/SearchBar";
+import Drawer from "./ReactComponents/Adrower/Drawer"
+
 
 function App() {
+
   return (
     <div className=" w-screen">
       <Nav />
@@ -21,8 +24,11 @@ function App() {
         <Mainn/>
         
       </div>
-
+         
     </div>
+
+    
+
   );
 }
 
